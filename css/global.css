@@ -3,6 +3,13 @@ body {
   background-color: #e4ddd6;
 }
 
+.img-matriz {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+
 .principal {
   max-width: 450px;
   max-height: 100vh;
