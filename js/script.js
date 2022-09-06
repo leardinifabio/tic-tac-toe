@@ -11,8 +11,8 @@ const btnss = [
 ];
 
 let cont = 1;
-
 const btns = document.querySelectorAll(".btn-matriz");
+const btnReset = document.querySelector(".btn-reset");
 
 for (let btn of btnss) {
   btn.addEventListener("click", imprime);
@@ -28,6 +28,19 @@ function imprime() {
   id.innerHTML = `<img src='../assets/images/${img}.png' class='img-matriz'>`;
 
   console.log("clicked");
+}
+
+//Função para resetar o jogo
+
+btnReset.addEventListener("click", reset);
+
+function reset() {
+  for (let btn of btnss) {
+    const id = document.getElementById(btn.id);
+    id.innerHTML = ``;
+    console.log("reset");
+    cont = 1;
+  }
 }
 
 console.log(btns);
