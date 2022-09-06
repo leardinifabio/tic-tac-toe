@@ -25,7 +25,7 @@ function imprime() {
 
   cont % 2 == 0 ? (img = "circle") : (img = "cross");
 
-  id.innerHTML = `<img src='./assets/images/${img}.png' class='img-matriz'>`;
+  id.innerHTML = `<img src='..assets/images/${img}.png' class='img-matriz'>`;
 
   console.log("clicked");
 }
