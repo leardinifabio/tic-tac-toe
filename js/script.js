@@ -10,6 +10,12 @@ const btnss = [
   document.querySelector("#C3"),
 ];
 
+const matriz = [
+  [0, 0, 0],
+  [0, 0, 0],
+  [0, 0, 0],
+];
+
 let cont = 1;
 const btns = document.querySelectorAll(".btn-matriz");
 const btnReset = document.querySelector(".btn-reset");
